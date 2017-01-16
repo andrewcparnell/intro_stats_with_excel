@@ -35,7 +35,7 @@ Time  | Class
 10:00-11:00 | [Class 4: Confidence intervals and t-tests](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_4_confidence_intervals_t_tests.pdf) ([handout](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_4_confidence_intervals_t_tests_handout.pdf))
 11:00-11:15 | Coffee break
 11:15-12:15 | [Class 5: Statistical modelling and ANOVA](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_5_modelling_and_ANOVA.pdf) ([handout](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_5_modelling_and_ANOVA_handout.pdf))
-12:15-13:00 | [Excel Practical 3: t-tests and ANOVA in Excel](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/practicals/practical_1_calculation_graphics.pdf) 
+12:15-13:00 | [Excel Practical 3: t-tests and ANOVA in Excel](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/practicals/practical_3_ttests_ANOVA.pdf) 
 13:00-14:00 | Lunch 
 14:00-15:00 | [Class 6: Linear regression and control charts](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_6_linear_regression_control_charts.pdf) ([handout](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_6_linear_regression_control_charts_handout.pdf))
 15:00-16:00 | Excel Practical 4: Control charts with Excel 
