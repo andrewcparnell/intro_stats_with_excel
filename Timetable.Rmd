@@ -16,6 +16,8 @@ A two day course on introductory statistics using Excel. The syllabus is:
 - ANOVA and F-tests
 - Control charts
 
+Data sets are available to download [here](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/practicals/data_sets.xlsx) and [here](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/practicals/other_data_sets.xlsx).
+
 ## Day 1
 
 Time  | Class
