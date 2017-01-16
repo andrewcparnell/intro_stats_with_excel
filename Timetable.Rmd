@@ -1,0 +1,43 @@
+---
+title: "Introduction to Statistics Using Excel"
+author: "Andrew Parnell"
+output: html_document
+---
+
+A two day course on introductory statistics using Excel. The syllabus is:
+
+- Graphical and tabular summaries of data
+- Basics of experimental design
+- Probability distributions
+- Hypothesis testing
+- Confidence intervals
+- t-tests
+- Linear regression
+- ANOVA and F-tests
+- Control charts
+
+## Day 1
+
+Time  | Class
+------------- | ----------------------------------------------------
+10:00-11:00 | [Class 1: basics, tabular and graphical summaries of data](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_1_basics.pdf) ([handout](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_1_basics_handout.pdf))
+11:00-11:15 | Coffee break
+11:15-12:15 | [Class 2: Experimental design and probability distributions](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_2_exp_design_probability.pdf) ([handout](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_2_exp_design_probability_handout.pdf))
+12:15-13:00 | [Excel Practical 1: basics of calculation and graphics with Excel](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/practicals/practical_1_calculation_graphics.pdf) 
+13:00-14:00 | Lunch 
+14:00-15:00 | [Class 3: Hypothesis testing](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_3_hypothesis_testing.pdf) ([handout](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_3_hypothesis_testing_handout.pdf))
+15:00-16:00 | [Excel Practical 2: Using the basics of the Excel data analysis package](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/practicals/practical_2_Excel_data_analysis.pdf) 
+
+## Day 2
+
+Time  | Class
+------------- | ----------------------------------------------------
+10:00-11:00 | [Class 4: Confidence intervals and t-tests](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_4_confidence_intervals_t_tests.pdf) ([handout](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_4_confidence_intervals_t_tests_handout.pdf))
+11:00-11:15 | Coffee break
+11:15-12:15 | [Class 5: Statistical modelling and ANOVA](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_5_modelling_and_ANOVA.pdf) ([handout](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_5_modelling_and_ANOVA_handout.pdf))
+12:15-13:00 | [Excel Practical 3: t-tests and ANOVA in Excel](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/practicals/practical_1_calculation_graphics.pdf) 
+13:00-14:00 | Lunch 
+14:00-15:00 | [Class 6: Linear regression and control charts](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_6_linear_regression_control_charts.pdf) ([handout](https://rawgit.com/andrewcparnell/intro_stats_with_excel/master/class_notes/class_6_linear_regression_control_charts_handout.pdf))
+15:00-16:00 | Excel Practical 4: Control charts with Excel 
+
+
