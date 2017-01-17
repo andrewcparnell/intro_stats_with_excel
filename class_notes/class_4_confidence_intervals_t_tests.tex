@@ -114,17 +114,50 @@ How do the following terms relate to this problem?
 
 \end{frame}
 
-
 \begin{frame}{Standardising statistics for sampling distributions}
 
 \begin{itemize}
 \item Yesterday we learnt about how to \bgr{standardise} values by subtracting the mean and dividing by the standard deviation. We end up with a random variable that has mean 0 and standard deviation 1. 
 \item We can do this in general for \bre{any} sample statistic: 
 $$\mbox{Standardised value} = \frac{\mbox{Sample statistic}-\mbox{Population parameter}}{s.d.(\mbox{sample statistic})}$$
-\item In the real world, we don't have a population parameter, nor a standard deviation. However, we can replace the standard deviation of the parameter with the \bre{standard error} and the population parameter with a suitable \bbl{test value}.
+\item In the real world, we don't have a population parameter, nor a population standard deviation. However, we can replace the standard deviation of the parameter with the \bre{standard error} and the population parameter with a suitable \bbl{test value}.
 \end{itemize}
 \end{frame}
 
+\begin{frame}\frametitle{The 7 steps of a Hypothesis Test}
+\begin{enumerate}
+\item[1] State the Null and Alternative Hypotheses ($H_0$ and $H_A$). The Null Hypothesis is usually a simple statement of equality, and the alternative the opposite
+\vspace*{0.5cm}
+\item[2] Identify the level of significance (usually 5\% or 1\% if you want to be more careful).
+\vspace*{0.5cm}
+\item[3] Assume $H_0$ is true and compute the test statistic. \pause
+\vspace*{0.5cm}
+\item[4] Identify the rejection region: (we will always used two-tailed tests - not looking for a particular direction of change). Excel will work this out for you but it helps to draw a picture
+\vspace*{0.5cm}
+\item[5] Compare the test statistic with the critical value(s). \pause
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{}
+\begin{enumerate}
+\item[6] Draw a conclusion:\\
+\begin{itemize}
+\item If the value of the test statistic falls inside the rejection region then reject $H_0$ and conclude that $H_A$ is true.
+\vspace*{0.5cm}
+\item If the test statistic does not fall in the rejection region do not reject $H_0$. 
+ \end{itemize}
+\item[7] Interpret the conclusion: The conclusion must be stated in the context of the problem and should include the level of significance.
+    \end{enumerate}
+Excel will run steps 3 to 5 for you, but you need to know 1, 2, 6, and 7
+\end{frame}
+
+\begin{frame}{Reminder: rejection regions}
+
+\begin{center}
+\includegraphics[width=\textwidth]{normal_areas.pdf}
+\end{center}
+
+\end{frame}
 
 \begin{frame}[fragile]{}
 \bbl{\Huge The $t$ distribution}\\ 
@@ -166,36 +199,6 @@ All of the results of the different situations we have met in this lecture follo
 \vspace{0.5cm}
 \end{frame}
 
-\begin{frame}\frametitle{Reminder: the 8-steps of a Hypothesis Test}
-\begin{enumerate}
-\item[1] State the Null and Alternative Hypotheses ($H_0$ and $H_A$).
-\vspace*{0.5cm}
-\item[2] Identify the level of significance $\alpha$.
-\vspace*{0.5cm}
-\item[3] State any assumptions.
-\vspace*{0.5cm}
-\item[4] Assume $H_0$ is true and compute the test statistic. \pause
-\vspace*{0.5cm}
-\item[5] Identify the rejection region: \\ decide if the test is upper, lower or two-tailed, then use the appropriate table and $\alpha$ to find critical value(s).
-\vspace*{0.5cm}
-\item[6] Compare the test statistic with the critical value(s). \pause
-\end{enumerate}
-\end{frame}
-
-\begin{frame}\frametitle{}
-\begin{enumerate}
-\item[7] Draw a conclusion:\\
-\begin{itemize}
-\item If the value of the test statistic falls inside the rejection region then reject $H_0$ and conclude that $H_A$ is true. \\This is either a correct decision or a type I error. 
-\vspace*{0.5cm}
-\item If the test statistic does not fall in the rejection region do not reject $H_0$. This does not mean that $H_0$ is proven, it simply means that the data do not provide sufficient evidence to reject it. \\
- This is either a correct decision or a type II error. \pause
- \end{itemize}
- \vspace*{0.5cm}
-\item[8] Interpret the conclusion: The conclusion must be stated in the context of the problem and should include the level of significance.
-    \end{enumerate}
-\end{frame}
-
 \begin{frame}\frametitle{Example}
 A random sample of 14 cows was selected from a large dairy herd in Cork. The milk yield in one week was recorded, in kg, for each cow. \\
 \vspace{0.5cm}
@@ -217,14 +220,7 @@ A random sample of 14 cows was selected from a large dairy herd in Cork. The mil
 $$H_{0}: \mbox{population mean} = 120 \mbox{ and } H_{A}: \mbox{population mean} \neq 120$$
 \item[2] \emph{Identify the level of significance.}
 $$\mbox{We will use } 0.05  = 5\%$$
-\item[3] \emph{State any assumptions.}
-$$\mbox{Small sample so use $t$ distribution.}$$
-\end{enumerate}
-\end{frame}
-
-\begin{frame}\frametitle{Milk yield example}
-\begin{enumerate}
-\item[4] \emph{Assume $H_0$ is true and compute the test statistic. }
+\item[3] \emph{Assume $H_0$ is true and compute the test statistic. }
 \begin{eqnarray*} 
 \mbox{test statistic} & = &\frac{\mbox{sample mean} - 120}{\mbox{standard deviation}/\sqrt{n}} \\
  & & \\
@@ -238,7 +234,7 @@ $$\mbox{Small sample so use $t$ distribution.}$$
 \begin{frame}
 \frametitle{Milk yield example}
 \begin{enumerate}
-\item[5] \emph{Identify the rejection region: use the appropriate Excel function and significance level to find critical value(s).\\}
+\item[4] \emph{Identify the rejection region: use the appropriate Excel function and significance level to find critical value(s).\\}
 \end{enumerate}
 $$\mbox{2 tailed test. } \hspace{0.5cm} df =  n - 1 = 13.$$ 
 \vspace{-0.8cm}
@@ -252,7 +248,7 @@ $$\mbox{ critical value } = 2.16 \mbox{ (Excel formula was \texttt{T.INV.2T(0.05
 
 \begin{frame}\frametitle{Milk yield example}
 \begin{enumerate}
-\item[6] \emph{Compare the test statistic with the critical value(s).}
+\item[5] \emph{Compare the test statistic with the critical value(s).}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{t_plot2.pdf}
 \end{center}
@@ -262,12 +258,10 @@ $$\mbox{test statistic } = 2.78 > 2.16 = \mbox{critical value}$$
 
 \begin{frame}\frametitle{Milk yield example}
 \begin{enumerate}
-\item[7] \emph{Draw a conclusion:}\\
+\item[6] \emph{Draw a conclusion:}\\
 \vspace{0.5cm}
 Test statistic falls inside the rejection region so\\ reject $H_0$ and conclude that $H_A$ is true. \\
-\vspace{0.5cm}This is either a correct decision or a type I error. 
- \vspace*{0.5cm}
-\item[8] \emph{Interpret the conclusion:}\\
+\item[7] \emph{Interpret the conclusion:}\\
 \vspace{0.5cm}
 The mean weekly milk yield is \emph{significantly different} from 120kgs, at the 5\% level.
     \end{enumerate}
@@ -278,14 +272,14 @@ The mean weekly milk yield is \emph{significantly different} from 120kgs, at the
 \begin{itemize}
 \item The conclusion of a hypothesis test is dependent on the choice of the significance level (usually 0.05).
 \item Rather than pick a value, you could find the value associated with the test statistic value. This is the $p$-value approach we met yesterday.
-\item The $p$-value can be compared to the significance level, so each person can make a decision based on their own choice of value.
+\item The $p$-value can be compared to the significance level, so each person can make a decision based on their own choice of value. Excel usually provides the $p$-value for you
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{$p$-value approach to hypothesis testing}
 \begin{itemize}
-\item Our test statistic value was 2.78. We can the probability of being more extreme than this value using Excel
+\item Our test statistic value was 2.78. We can calculate the probability of being more extreme than this value using Excel
 \item The formula is: 	\texttt{T.DIST.2T(2.78, 13)} = 0.016.
 \item This is smaller than 0.05 so if using 5\% as the significance level we can say that the result is `statistically significant at the 1.6\% level'
 \end{itemize}
@@ -293,7 +287,7 @@ The mean weekly milk yield is \emph{significantly different} from 120kgs, at the
 
 \begin{frame}{$p$-values continued}
 \begin{itemize}
-\item Don't forget what statistical significance means. It is not a measure of whether a result is large or important
+\item Don't forget what statistical significance means. It is not a measure of whether a result is large or important. It means that you have a big enough sample size to `signify' something
 \item The American Statistical Association recently released some advice on $p$-values:
 \end{itemize}
 \begin{quote}
@@ -362,36 +356,6 @@ We only consider inferences based on independent samples
 \end{frame}
 
 \begin{frame}
-\frametitle{Sampling Distribution of a difference in means}
-Since we are interested in the population mean difference it is natural to consider the sample means differences. We need to know its sampling distribution.\\
-\vspace*{0.2cm}
-\emph{The \textbf{\tcb{sampling distribution}} for a statistic is the distribution of possible values 
-of the statistic, for repeated samples of the same size taken from the same population.}\\
-\vspace*{0.2cm}
-\begin{itemize}
-\item A sample 190 UCD students were asked ``How many hours of sleep did you 
-get last night?''
-\item The mean of the 100 males was 7.1 hours and the 90 females was 7.4 hours
-\item Suppose another 190 students were asked that same question. 
-\item It is unlikely that the mean difference would be exactly 0.3 hours again.
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Sampling Distribution of a difference in means}
-\begin{itemize}
-\item Is we asked `lots' of groups, each with 190 students (100 males and 90 females), the same question, we would get a histogram  of sample mean differences:
-
-\begin{center} 
-\includegraphics[width=0.4\textwidth]{SamplingDistribution.pdf}\\
-\end{center}
-
-\item A normal curve is superimposed on top of the histogram -- this is the \textbf{\tcb{sampling distribution}} of possible sample means. 
-\item Note that it is approximately a normal distribution. 
-\end{itemize}
-\end{frame}
-
-\begin{frame}
 \frametitle{Performing the hypothesis test}
 \begin{itemize}
 \item To test $H_0: \mbox{population mean difference} = 0$, the test statistic is:
@@ -431,7 +395,7 @@ At the 5\% level, do these data indicate that the new method is better?
 \begin{frame}
 \frametitle{Example - slow learners}
 \begin{itemize}
-\item $H_0: \mbox{population mean difference} = 0$ vs $H_0: \mbox{population mean difference} \ne 0$
+\item $H_0: \mbox{population mean difference} = 0$ vs $H_A: \mbox{population mean difference} \ne 0$
 \item Test statistic:
 $$\mbox{test statistic} = \displaystyle\frac{(76.4 - 72.3)}{\sqrt{\frac{5.84^2}{10} + \frac{6.34^2}{12}}} = 1.58$$
 \item Compute the degrees of freedom:
@@ -505,7 +469,7 @@ A random sample of 14 cows was selected from a large dairy herd in Cork. The mil
 \vspace{0.5cm}
 
 \begin{enumerate}
-\item Dept. of Ag. want to investigate the farmer's claim that the mean weekly milk yield for the herd is 120kg.
+\item Dept. of Ag. want to investigate the farmer's claim that the mean weekly milk yield for the herd is 120kg. Create a 95\% confidence interval for the mean weekly milk yield.
 \end{enumerate}
 \end{frame}
 
@@ -528,6 +492,13 @@ Based on our sample, we are 95\% confident that the mean weekly milk yield lies 
 \item For a 99\% confidence interval we would use the 99.5th percentile of the $t$-distribution. (It always helps to draw a picture)
 \item In Excel, we'd use \texttt{T.INV(0.975, 13)} which will return the value 2.16
 \end{itemize}
+
+\end{frame}
+
+\begin{frame}{$t$-value picture}
+\begin{center}
+\includegraphics[width=\textwidth]{t_plot3.pdf}
+\end{center}
 
 \end{frame}
 
@@ -590,6 +561,7 @@ $$5.9-4.9 \pm 1.96 \times 0.24 = (0.53,1.47)\; \mbox{symptoms}$$
 \item The $t$-distribution is the one to use whenever we don't know what the population standard deviation is (i.e. nearly always)
 \item $t$-tests are created following the standard hypothesis testing steps. We calculate whether our test statistic is in the rejection region or not, or use a $p$-value
 \item More useful than a hypothesis test is a confidence interval, which expresses uncertainty about how likely repeated samples are to contain the true value
+\item 2-sample $t$-tests can be run in Excel through the Data Analysis package, whilst confidence intervals are not provided
 \end{itemize}
 \end{frame}
 

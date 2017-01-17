@@ -342,6 +342,14 @@ The results are usually presented in a table with the following values:
 The ratio of these last two provides the $F$-statistic
 \end{frame}
 
+\begin{frame}{ANOVA picture}
+
+\begin{center}
+\includegraphics[width= \textwidth]{anova_plot.pdf}
+\end{center}
+
+\end{frame}
+
 \begin{frame}\frametitle{The ANOVA table}
 
 \vspace{0.2cm}
@@ -384,7 +392,7 @@ Total &14 &264.93&&\\\hline
 \end{frame}
 
 
-\begin{frame}\frametitle{1-way ANOVA -- DIY!}
+\begin{frame}\frametitle{1-way ANOVA }
 \emph{Example: Journal of Adolescent Research 1992} 
 \vspace{0.3cm}
 \begin{itemize}
@@ -504,33 +512,11 @@ $$ 3.55 \pm 1.992 \times 0.20504 = 3.55 \pm 0.4084 = (3.14, \,\,\,3.96) \mbox{ e
 \end{frame}
 
 \begin{frame}
-\frametitle{The Randomised Block Design}
-\begin{itemize}
-\item Usually an investigator wishes to establish treatment effects (i.e. differences in treatment
-means) by rejecting $H_0$.
-\vspace*{0.3cm}
-\item It is possible that $H_0$ is \underline{not} rejected even when treatment means \underline{do} differ
-\vspace{0.3cm}
-\item This is a Type II error, which occurs with probability $\beta$.
-\vspace*{0.3cm}
-\item The \tc{blue}{power} of a test (for specified $\alpha$), is the probability that $H_0$ is rejected so:
-\begin{itemize}
-\vspace{0.2cm}
-\item[-] when $H_0$ is true, power $ = \alpha$.
-\vspace{0.2cm}
-\item[-]when $H_0$ is false, the power will depend e.g. on how different the means are, and so power 
-$= 1 - \beta$.
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}
 \frametitle{Blocking to increase power}
 \begin{itemize}
 \item Power (the probability of detecting differences) is greater when there is \tc{blue}{less variation
 among the experimental units}
-i.e.~when $\sigma^2$ is small.
+i.e.~when the within group standard deviation is small.
 \vspace*{0.1cm}
 \item In such a case, most of the variation can be attributed to differences between the treatment
 means and a large $F$ value is more likely.
@@ -605,8 +591,6 @@ scores to the different experience levels of the volunteers.
 are detected as significant if they truly exist.
 \end{itemize}
 \end{frame}
-
-
 
 
 \begin{frame}
